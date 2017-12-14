@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+
+/*============================== BODY ===========================*/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Questrial';
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+/*========================== Font SIZE/COLOR/ETC ============*/
+h1 {
+  font-size: 128px;
+
+}
+h3 {
+  font-size: 10px;
+  color: white;     /* blog date: want it white and  */
+}
+
+h5 {
+  font-size: 13px; /* used for footer*/
+  color: black;
+}
+h6 {
+  font-size: 128px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* ========================= JUMBOTRON SETTINGS ================== */
+
+.jumbotron {
+  background-color: rgba(107, 250, 250, 0.1);
+  border-color: #fff;
+  border: solid;
+}
+
+
+/*============================ NAVBAR ========================*/
+
+                                          /*Change the logo color*/
+
+.navbar-default .navbar-brand {
+  color: #eeeeee;
+}
+                                            /*change the navs colors*/
+.navbar .nav  > li > a {
+    float: none;
+    color: #eeeeee;
+
+}
+                                      /*makes the active nav button transparent
+                                      and make the font larger so you know
+                                      which page you are on. some people might
+                                      get lost... dear god.*/
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #fff;
+    background-color: transparent;
+    font-size: 28px;
+    font-style: italic;
+}
+
+                                              /*!!!!!!BUG!!!!!!!!
+                                      sledgehammer override to make
+                                      everything transparent
+                                      all the time. Will fix in future.*/
+
+@media(min-width:0) {
+    .navbar-default {
+      font-size: 20px;
+        border-color: transparent;
+        background-color: transparent;
+        color: #eeeeee;
+    }
+  }
+
+/*================================ CAROUSEL =============================*/
+
+.carousel {
+  min-height: 600px;
+  max-height: 600px;
+}
+
+/*======================= FOOTER STYLE ===========================*/
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 1px;
+  background-color: rgba(120, 120, 120, 0.4);
+
+  ;
+}
+
+.footer a {        /*override the color of email so its not hideous. */
+  color:black;
+}
+
+
+/* ===============================--- BOX BANNER THING --==========*/
+
+
+.bigbox > h1 {
+  background-color: rgba(255, 0, 0, .4);
+  font-size: 92px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 160px;
+  max-height: 100%;
+}
+
+.bigbox2 > h1 {
+  width: 100%;
+  background-color: rgba(255, 0, 0, .3);
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 130px;
+
+
+
+
+}
+.bigbox3 > h1 {
+  width: 100%;
+  background-color: rgba(255, 0, 0, .2);
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+  min-height: 100px;
+}
+.bigbox4 > h1 {
+  width: 100%;
+  background-color: rgba(255, 0, 0, .1);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  min-height: 80px;
+  height: 100%;
+}
+
+.hello {
+  text-align: center;
+}
